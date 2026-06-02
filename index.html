@@ -1,31 +1,219 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Introduction to the Universe</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Universe - Explore the Cosmos</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: linear-gradient(180deg, #020617, #0f172a);
+      color: #e2e8f0;
+      line-height: 1.7;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 20px;
+      background:
+        radial-gradient(circle at 20% 30%, rgba(59,130,246,.3), transparent 30%),
+        radial-gradient(circle at 80% 20%, rgba(139,92,246,.3), transparent 30%),
+        radial-gradient(circle at 50% 80%, rgba(236,72,153,.2), transparent 40%);
+    }
+
+    .hero {
+      max-width: 900px;
+    }
+
+    h1 {
+      font-size: 4rem;
+      margin-bottom: 20px;
+      color: #ffffff;
+    }
+
+    .subtitle {
+      font-size: 1.3rem;
+      color: #cbd5e1;
+    }
+
+    section {
+      max-width: 1100px;
+      margin: auto;
+      padding: 80px 20px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+      color: #60a5fa;
+      font-size: 2rem;
+    }
+
+    p {
+      margin-bottom: 16px;
+      color: #cbd5e1;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      margin-top: 40px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 16px;
+      padding: 24px;
+      backdrop-filter: blur(10px);
+      transition: transform 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-6px);
+    }
+
+    .card h3 {
+      margin-bottom: 12px;
+      color: #93c5fd;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px 20px;
+      border-top: 1px solid rgba(255,255,255,0.1);
+      color: #94a3b8;
+    }
+
+    .quote {
+      text-align: center;
+      font-size: 1.3rem;
+      font-style: italic;
+      margin-top: 40px;
+      color: #e0f2fe;
+    }
+  </style>
 </head>
 <body>
+
   <header>
-    <h1>Welcome to the Universe</h1>
-    <p>The universe is a vast and fascinating place filled with stars, planets, galaxies, and endless mysteries waiting to be explored.</p>
+    <div class="hero">
+      <h1>The Universe</h1>
+      <p class="subtitle">
+        An endless cosmic ocean filled with billions of galaxies,
+        stars, planets, and mysteries waiting to be discovered.
+      </p>
+    </div>
   </header>
 
-  <main>
-    <section>
-      <h2>What Is the Universe?</h2>
-      <p>The universe includes everything that exists: space, time, matter, energy, and all forms of life. It is incredibly large, and scientists are still discovering new parts of it every day.</p>
-    </section>
+  <section>
+    <h2>What Is the Universe?</h2>
 
-    <section>
-      <h2>Its Amazing Wonders</h2>
-      <p>From the bright Sun in our solar system to distant black holes and colorful nebulae, the universe is full of breathtaking phenomena. Each object in space helps us better understand how the cosmos works.</p>
-    </section>
+    <p>
+      The Universe is everything that exists: space, time, matter,
+      energy, galaxies, stars, planets, and even the laws of physics
+      that govern them. Scientists estimate that the Universe is
+      approximately 13.8 billion years old and has been expanding ever
+      since the Big Bang.
+    </p>
 
-    <section>
-      <h2>Why Explore Space?</h2>
-      <p>Learning about the universe inspires curiosity, advances science, and helps humanity understand its place in the cosmos. Space exploration also drives innovation and brings people together through shared discovery.</p>
-    </section>
-  </main>
+    <p>
+      Despite centuries of research, much of the Universe remains
+      unexplored. Dark matter and dark energy together make up most of
+      the cosmos, yet their true nature is still one of science's
+      greatest mysteries.
+    </p>
+  </section>
+
+  <section>
+    <h2>Fascinating Cosmic Objects</h2>
+
+    <div class="grid">
+      <div class="card">
+        <h3>🌌 Galaxies</h3>
+        <p>
+          Massive collections of stars, gas, dust, and dark matter.
+          Our Solar System is located within the Milky Way Galaxy.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>⭐ Stars</h3>
+        <p>
+          Giant spheres of hot plasma that generate light and heat
+          through nuclear fusion. The Sun is our nearest star.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🪐 Planets</h3>
+        <p>
+          Celestial bodies orbiting stars. Some may contain conditions
+          suitable for life.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🕳️ Black Holes</h3>
+        <p>
+          Regions of space where gravity is so powerful that nothing,
+          not even light, can escape.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>☄️ Comets</h3>
+        <p>
+          Icy objects that travel through the Solar System, often
+          creating beautiful glowing tails.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>🚀 Nebulae</h3>
+        <p>
+          Vast clouds of gas and dust where new stars are born and
+          cosmic evolution unfolds.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Why Explore Space?</h2>
+
+    <p>
+      Space exploration helps humanity understand our origins, discover
+      new worlds, develop advanced technologies, and search for life
+      beyond Earth.
+    </p>
+
+    <p>
+      Missions to the Moon, Mars, and distant planets continue to
+      expand our knowledge of the cosmos and inspire future
+      generations of scientists and explorers.
+    </p>
+
+    <div class="quote">
+      "Somewhere, something incredible is waiting to be known."
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 The Universe Explorer</p>
+    <p>Exploring the wonders of the cosmos.</p>
+  </footer>
+
 </body>
 </html>
